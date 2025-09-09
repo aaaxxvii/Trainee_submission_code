@@ -15,7 +15,7 @@
 
 1. **リポジトリをクローン**
     ```sh
-    git clone [https://github.com/](https://github.com/)[your-username]/[your-repository-name].git
+    git clone https://github.com/aaaxxvii/Trainee_submission_code.git
     cd [your-repository-name]
     ```
 
