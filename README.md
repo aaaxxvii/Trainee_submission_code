@@ -21,6 +21,7 @@ trainee_EDA.ipynbに必要
 - **Seaborn**
 - **Japanize-matplotlib**
 - **ydata_profiling**
+- **ipywidgets**
 
 trainee.pyに必要
 - **Python 3.12**
@@ -45,7 +46,7 @@ trainee.pyに必要
 
    以下のコマンドで、必要なライブラリをインストールします。
     ```sh
-    pip install pandas numpy matplotlib scikit-learn tensorflow optuna japanize-matplotlib　seaborn ydata_profiling
+    pip install pandas numpy matplotlib scikit-learn tensorflow optuna japanize-matplotlib　seaborn ydata_profiling ipywidgets
     ```
 
 
