@@ -6,8 +6,31 @@
  
 ## 目次 (Table of Contents)
 
+- [環境](#環境)
 - [インストール](#インストール)
-- [使い方](#使い方)
+- [使用法](#使用法)
+
+## 環境
+このプロジェクトで使用した主要なライブラリやツールです。
+
+trainee_EDA.ipynbに必要
+- **Python 3.12**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **Japanize-matplotlib**
+
+trainee.pyに必要
+- **Python 3.12**
+- **TensorFlow / Keras**
+- **Optuna**
+- **Scikit-learn**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+
+
 
 ## インストール
 
@@ -16,20 +39,24 @@
 1. **リポジトリをクローン**
     ```sh
     git clone https://github.com/aaaxxvii/Trainee_submission_code.git
-    cd [your-repository-name]
     ```
-
 2. **必要なライブラリをインストール**
+
+   以下のコマンドで、必要なライブラリをインストールします。
     ```sh
-    pip install -r requirements.txt
+    pip install pandas numpy matplotlib scikit-learn tensorflow optuna japanize-matplotlib
     ```
 
----
 
-## 使い方 (Usage)
+## 使用法
 
-モデルを学習・評価・推論する方法について記述します。
+### trainee_EDA.ipynbについて
+- ローカルで実行する場合、`stock_price.csv`をコードファイルと同じディレクトリに配置し、VScodeやJupyterなどで実行
+- Google Colab でも簡単に実行できます。
 
-**学習の実行:**
-```sh
-python train.py --input_data [path/to/data] --output_model [path/to/save/model]
+### trainee.pyについて
+1. **データセットの準備**: `stock_price.csv`をコードファイルと同じディレクトリに配置してください。
+2. **学習の実行**: 以下のコマンドで、モデルの学習、ハイパーパラメータ最適化、および評価が実行されます。
+    ```sh
+    python trainee.py
+    ```
